@@ -21,7 +21,7 @@ The [`library`](https://github.com/ideas-labo/aspiration-study/tree/main/library
 
 ## Dataset
 
-The experiment data reported in the work can be found at: [https://zenodo.org/record/5764258](https://zenodo.org/record/5764258). The naming rules rather self-explained. 
+The experiment data reported in the work can be found at: [https://zenodo.org/record/5764258](https://zenodo.org/record/5764258). The naming rules are self-explained. 
 
 ## Supplementary
 
