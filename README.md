@@ -6,7 +6,7 @@ This repository contains the data and code for the following paper:
 
 ## Introduction
 
-Configurable software systems can be tuned for better performance. Leveraging on some Pareto optimizers, recent work has shifted from tuning for a single, time-related performance objective to two intrinsically different objectives that assess distinct performance aspects of the system, each with varying aspirations to be satisfied, e.g., ``the latency is less than 10s'' while ``the memory usage is no more than 1GB''. Before we design better optimziers, a crucial engineering decision to make therein is how to handle the performance requirements with clear aspirations in the tuning process. For this, the community takes two alternative optimization models: either quantifying and incorporating the aspirations into the search objectives that guide the tuning, or not considering the aspirations during the search but purely using them in the later decision-making process only. However, despite being a crucial decision that determines how an optimizer can be designed and tailored, there is a rather limited understanding of which optimization model should be chosen under what particular circumstance, and why. In this paper, we seek to close this gap. We do that through a comprehensive empirical study that covers 15 combinations of the state-of-the-art performance requirement patterns that quantify the aspirations, four types of aspiration space, three Pareto optimizers, and eight real-world systems/environments, leading to 1,296 cases of investigation. Our findings reveal that (1) the realism of aspirations is the key factor that determines whether they should be used to guide the tuning; (2) the given patterns and the position of the given realistic aspirations in the objective landscape are less important for the choice, but they do matter to the extents of improvement; (3) the available tuning budget can also influence the choice for unrealistic aspirations but it is insignificant under realistic ones.
+Configurable software systems can be tuned for better performance. Leveraging on some Pareto optimizers, recent work has shifted from tuning for a single, time-related performance objective to two intrinsically different objectives that assess distinct performance aspects of the system, each with varying aspirations to be satisfied, e.g., *the latency is less than 10s* while *the memory usage is no more than 1GB*. Before we design better optimziers, a crucial engineering decision to make therein is how to handle the performance requirements with clear aspirations in the tuning process. For this, the community takes two alternative optimization models: either quantifying and incorporating the aspirations into the search objectives that guide the tuning, or not considering the aspirations during the search but purely using them in the later decision-making process only. However, despite being a crucial decision that determines how an optimizer can be designed and tailored, there is a rather limited understanding of which optimization model should be chosen under what particular circumstance, and why. In this paper, we seek to close this gap. We do that through a comprehensive empirical study that covers 15 combinations of the state-of-the-art performance requirement patterns that quantify the aspirations, four types of aspiration space, three Pareto optimizers, and eight real-world systems/environments, leading to 1,296 cases of investigation. Our findings reveal that (1) the realism of aspirations is the key factor that determines whether they should be used to guide the tuning; (2) the given patterns and the position of the given realistic aspirations in the objective landscape are less important for the choice, but they do matter to the extents of improvement; (3) the available tuning budget can also influence the choice for unrealistic aspirations but it is insignificant under realistic ones.
 
 ## Code
 
@@ -21,20 +21,7 @@ The [`library`](https://github.com/ideas-labo/aspiration-study/tree/main/library
 
 ## Dataset
 
-The experiment data reported in the work can be found at: [https://zenodo.org/record/5764258](https://zenodo.org/record/5764258). The naming rule follow as `[budget type]`-`[problem name]`, e.g., `eval-sct` means the SCT problem using evaluation number as the search budget. In each of the above directory, the number, e.g., `0.1-0.9`, means the weight-vector under which the data is for the weighted search. The data for Pareto search is stored in the directories named by the corresponding system/project. 
-
-Most of the system/project names are self-explained and are consistent with the paper, except the following:
-
-
-* SS-A -> WC-C1-3D
-* SS-C -> WC-C3-3D
-* SS-E -> WC-C4-3D
-* SS-I -> WC-C5-5D
-* SS-J -> RS-C3-6D
-* SS-K -> WC-C1-6D
-* SS-L -> LVM
-* SS-M -> Trimesh
-* 100AS -> 50AS
+The experiment data reported in the work can be found at: [https://zenodo.org/record/5764258](https://zenodo.org/record/5764258). The naming rules rather self-explained. 
 
 ## Supplementary
 
