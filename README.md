@@ -23,6 +23,8 @@ The [`library`](https://github.com/ideas-labo/aspiration-study/tree/main/library
 
 The experiment data reported in the work can be found at: [https://zenodo.org/record/5764258](https://zenodo.org/record/5764258). The naming rules are self-explained. 
 
+Note that the full-scale data size is too large (nearly 60 GB), therefore here we only upload the data of the final results for all runs. To reduce the file size, the basic notations required for text editor software to parse the data file have been removed, thereby the ".rtf" files can only be read by command tools such as `cat` or `vim`.
+
 ## Supplementary
 
 The `supplementary-systems.pdf` contains the detailed specification of the systems studied in this work.
