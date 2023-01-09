@@ -2,7 +2,7 @@
 
 This repository contains the data and code for the following paper:
 
-> Tao Chen and Miqing Li. 2022. Do Performance Aspirations Matter for Guiding Software Configuration Tuning? An Empirical Investigation under Dual Performance Objectives. In submission.
+> Tao Chen and Miqing Li. 2023. Do Performance Aspirations Matter for Guiding Software Configuration Tuning? An Empirical Investigation under Dual Performance Objectives. ACM Transactions on Software Engineering and Methodology, doi: 10.1145/3571853.
 
 ## Introduction
 
